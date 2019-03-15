@@ -1,6 +1,8 @@
 package mngtool.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
+import org.springframework.data.repository.cdi.Eager;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -43,4 +45,6 @@ public class CurCourse {
             joinColumns = @JoinColumn(name = "cur_course_id"),
             inverseJoinColumns = @JoinColumn(name = "day_id"))
     Set<Day> days;
+
+    
 }
