@@ -20,6 +20,6 @@ public class Student {
     private int is_active;
     private String info;
     private int age;
-    @ManyToMany(mappedBy = "student")
-    Set<CurCourse> courses;
+    /*@ManyToMany(mappedBy = "student")
+    Set<CurCourse> courses;*/
 }

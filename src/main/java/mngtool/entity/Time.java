@@ -17,8 +17,8 @@ public class Time {
     private int id;
     private LocalTime time;
 
-    @ManyToMany(mappedBy = "times")
-    Set<CurCourse> courses;
+    /*@ManyToMany(mappedBy = "times")
+    Set<CurCourse> courses;*/
 
     public Time(){
 

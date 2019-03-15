@@ -29,4 +29,9 @@ public class TimeController {
         }
         return new ResponseEntity<>(tm,HttpStatus.OK);
     }
+
+    @RequestMapping(value = "all/", method = RequestMethod.GET)
+    public ResponseEntity<?> getTimes(){
+        return new ResponseEntity<>(timeRep.findAll(), HttpStatus.OK);
+    }
 }

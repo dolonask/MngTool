@@ -46,5 +46,5 @@ public class CurCourse {
             inverseJoinColumns = @JoinColumn(name = "day_id"))
     Set<Day> days;
 
-    
+
 }
